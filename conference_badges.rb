@@ -13,8 +13,8 @@ end
 
 def assign_rooms(list)
   res = []
-  list.each do |item|
-    res << "Hello, #{item}! You'll be assigned to room !"
+  list.each_with__index do |item, idx|
+    res << "Hello, #{item}! You'll be assigned to room #{idx+1}!"
   end
   return res
 end
