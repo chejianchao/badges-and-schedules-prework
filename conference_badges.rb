@@ -13,7 +13,7 @@ end
 
 def assign_rooms(list)
   res = []
-  list.each_with__index do |item, idx|
+  list.each_with_index do |item, idx|
     res << "Hello, #{item}! You'll be assigned to room #{idx+1}!"
   end
   return res
