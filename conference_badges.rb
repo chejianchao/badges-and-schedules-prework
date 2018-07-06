@@ -2,3 +2,11 @@
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
+
+def batch_badge_creator(list)
+  res = []
+  list.each do |item|
+    res << badge_maker(item)
+  end
+  return res
+end
