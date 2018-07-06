@@ -24,3 +24,12 @@ def badges_and_room_assignments(list)
   res2 = assign_rooms(list)
   res1.concat(res2)
 end
+
+def printer(list)
+  res1 = batch_badge_creator(list);
+  res2 = assign_rooms(list)
+  res1.each_with_index do |item, idx|
+    puts item
+    puts res2[idx]
+  end
+end
