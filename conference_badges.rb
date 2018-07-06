@@ -10,3 +10,10 @@ def batch_badge_creator(list)
   end
   return res
 end
+
+def assign_rooms(list)
+  res = []
+  list.each do |item|
+    res << ""
+  end
+end
