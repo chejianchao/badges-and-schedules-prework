@@ -14,7 +14,7 @@ end
 def assign_rooms(list)
   res = []
   list.each do |item|
-    res << "Hello, #{item}! You'll be assigned to room 4!"
+    res << "Hello, #{item}! You'll be assigned to room !"
   end
   return res
 end
