@@ -18,3 +18,9 @@ def assign_rooms(list)
   end
   return res
 end
+
+def badges_and_room_assignments(list)
+  res1 = batch_badge_creator(list);
+  res2 = assign_rooms(list)
+  res1.concat(res2)
+end
